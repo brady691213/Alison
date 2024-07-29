@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+}
+
+#container {
+    display: grid;
+    /*grid-template-columns: 100px 100px 100px 100px 100px 100px 100px 100px;*/
+    /*grid-template-rows: 100px 100px;*/
+}
+
+#container div {
+    height: 100px;
+    width: 100px;
+    border:  1px solid black;
+}
+
+.scoreboard {
+    background-color: black;
+    text-align: center;
+    font-size: 2em;
+    color: white;
+    padding: 10px;
+}
+
+.boxStart {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    border: 1px solid red;
+    background-color: black;
+}
+
+.wall {
+    background-color: lightskyblue;;
+    width: 100%;
+    height: 100%;
+}
+
+.grid {
+    margin: auto;
+    padding-top: 40px;
+    justify-content: center;
+    display: grid;
+    cursor: grab;
+    background-color: black;
+    overflow: hidden;
+}
+
+.dot {
+    left: 35%;
+    top: 35%;
+    width: 25%;
+    height: 25%;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.superdot {
+    position: absolute;
+    left: 25%;
+    top: 25%;
+    width: 50%;
+    height: 50%;
+    background-color: goldenrod;
+    border-radius: 50%;
+}
+
+.box {
+    font-size: 3rem;
+    text-align: center;
+//    position: relative;
+}

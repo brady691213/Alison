@@ -27,40 +27,40 @@ const player = {
     pause: false
 }
 
-function createSquare(val) {
-    const div = document.createElement("div");
-    div.classList.add("box");
-    if (val === 1) {
-        div.classList.add("wall");
-    }
-    if (val === 2) {
-        const dot = document.createElement("div");
-        dot.classList.add("dot");
-        div.append(dot);
-    }
-    if (val === 3) {
-        const dot = document.createElement("div");
-        dot.classList.add("superdot");
-        div.append(dot);
-    }
-    g.grid.append(div);
-    myBoard.push(div);
-}
+// function createSquare(val) {
+//     const div = document.createElement("div");
+//     div.classList.add("box");
+//     if (val === 1) {
+//         div.classList.add("wall");
+//     }
+//     if (val === 2) {
+//         const dot = document.createElement("div");
+//         dot.classList.add("dot");
+//         div.append(dot);
+//     }
+//     if (val === 3) {
+//         const dot = document.createElement("div");
+//         dot.classList.add("superdot");
+//         div.append(dot);
+//     }
+//     g.grid.append(div);
+//     myBoard.push(div);
+// }
 
-function createGame() {
-    for (let cell of tempBoard) {
-        createSquare(cell);
-    }
-
-    let colWidths = [];
-    for (let i = 0; i < g.size; i++) {
-        colWidths.push(g.h);
-    }
-    g.x = colWidths.map(w => `${w}px`).join(' ');
-
-    g.grid.style.gridTemplateColumns = g.x;
-    g.grid.style.gridTemplateRows = g.x;
-}
+// function createGame() {
+//     for (let cell of tempBoard) {
+//         createSquare(cell);
+//     }
+//
+//     let colWidths = [];
+//     for (let i = 0; i < g.size; i++) {
+//         colWidths.push(g.h);
+//     }
+//     g.x = colWidths.map(w => `${w}px`).join(' ');
+//
+//     g.grid.style.gridTemplateColumns = g.x;
+//     g.grid.style.gridTemplateRows = g.x;
+// }
 
 document.addEventListener("DOMContentLoaded", () => {
     g.grid = document.querySelector(".grid");
@@ -68,9 +68,9 @@ document.addEventListener("DOMContentLoaded", () => {
     g.eye = document.querySelector(".eye");
     g.mouth = document.querySelector(".mouth");
     g.ghost = document.querySelector(".ghost");
-    g.ghost.style = "display: none";
+    //g.ghost.style = "display: none";
 
-    createGame();
+    //createGame();
 
     console.log(g);
 })
