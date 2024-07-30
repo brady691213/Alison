@@ -10,16 +10,6 @@
     overflow: hidden;
 }
 
-/*.grid {*/
-/*    margin: auto;*/
-/*    padding-top: 40px;*/
-/*    justify-content: center;*/
-/*    display: grid;*/
-/*    cursor: grab;*/
-/*    background-color: black;*/
-/*    overflow: hidden;*/
-/*}*/
-
 .template {
     display: none;
 }
@@ -54,20 +44,21 @@
 }
 
 .dot {
-    /*position: absolute;*/
-    left: 0;
-    top: 0;
-    width: 20px; /* Set the desired width */
-    height: 20px;
-/ background-color: white;
+    position: absolute;
+    left: 35%;
+    top: 35%;
+    width: 26%; 
+    height: 25%;
+    background-color: white;
     border-radius: 50%;
 }
 
 .superdot {
-    left: 0;
-    top: 0;
-    width: 30%;
-    height: 30%;
+    position: absolute;
+    left: 25%;
+    top: 25%;
+    width: 40%;
+    height: 40%;
     background-color: goldenrod;
     border-radius: 50%;
 }
