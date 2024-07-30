@@ -6,22 +6,54 @@
     <link rel="stylesheet" href="styles.css"/>
     <link rel="stylesheet" href="pacman.css"/>
     <link rel="stylesheet" href="board.css"/>
+    <style>
+        /*#container {*/
+        /*    display: grid;*/
+        /*    grid-template-columns: 100px 100px 100px 100px 100px 100px 100px 100px;*/
+        /*    grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px;*/
+        /*}*/
+
+        /*#container div {*/
+        /*    height: 100px;*/
+        /*    width: 100px;*/
+        /*    border: 1px solid black;*/
+        /*}*/
+    </style>
 </head>
 <body>
-<!--<div class="grid" id="container"></div>-->
-<div class="boxStart">
-    <div class="ghost">
-        <div class="eyes eyesLeft"></div>
-        <div class="eyes eyesRight"></div>
-    </div>
+<div class="grid" id="container">
 </div>
-<!--<div class="grid" id="container"></div>-->
-<div class="boxStart">
+<div class="scoreboard">
+    <span class="score">Score: 0</span>
+    <span class="lives">Lives: 5</span>
+</div>
+<div class="template" id="cell-templates">
+    <div class="boxStart" id="ghost-template">
+        <div class="ghost">
+            <div class="eyes eyesLeft"></div>
+            <div class="eyes eyesRight"></div>
+        </div>
+    </div>
+    <div class="boxStart" id="pacman-template">
         <div class="pacman">
             <div class="eye"></div>
             <div class="mouth"></div>
         </div>
+    </div>
+    <div class="boxStart" id="dot-template">
+        <div class="dot">
+        </div>
+    </div>
+    <div class="boxStart" id="superdot-template">
+        <div class="superdot">
+        </div>
+    </div>
+    <div class="boxStart" id="wall-template">
+        <div class="wall">
+        </div>
+    </div>
 </div>
+
 <script language="JavaScript" src="app.js"></script>
 </body>
 </html>
